@@ -1,0 +1,348 @@
+/*below 1200 px*/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.2%;
+  }
+  .hero {
+    max-width: 120rem;
+    column-gap: 3.6rem;
+  }
+  .main-header {
+    padding-bottom: 8.6rem;
+  }
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+  .review {
+    font-size: 1.6rem;
+  }
+  .hero-img {
+    width: 85%;
+  }
+  .arrow {
+    left: 75%;
+  }
+}
+
+/* below 1040px */
+@media (max-width: 65em) {
+  .feature-text {
+    font-size: 1.2rem;
+  }
+  .adv-subheading {
+    font-size: 1.6rem;
+  }
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .down-bottom {
+    right: 42%;
+  }
+  .how-work-box {
+    width: 80%;
+  }
+}
+
+/* below 950px*/
+
+@media (max-width: 59.4em) {
+  .container {
+    padding: 1.2rem 6.4rem;
+  }
+  .hero-text-box {
+    text-align: center;
+  }
+  .tertiary-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  .main-header {
+    padding-bottom: 4.6rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .btn--form {
+    margin-top: 1.4rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.907);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    /* hide navigation*/
+    /* no transition allows when we set display to none*/
+    /*so we will use opacity instead*/
+    opacity: 0;
+    /* unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* hide from screen readers */
+    visibility: none;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8em;
+  }
+  /* .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  } */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: inline-block;
+  }
+  .marketing {
+    grid-template-columns: 2fr 3fr;
+    height: 31rem;
+    margin-bottom: 7.4rem;
+    column-gap: 6.4rem;
+  }
+  .given-icons-box {
+    list-style: none;
+    display: flex;
+    gap: 2.8rem;
+    padding: 3.6rem 5.2rem;
+    margin-bottom: 2.4rem;
+  }
+  .features-box {
+    padding: 1.8rem;
+  }
+  .pricing-container {
+    gap: 1.2rem;
+  }
+  .link {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .plan-price {
+    font-size: 3.8rem;
+  }
+  .list-item {
+    font-size: 1.2rem;
+  }
+  .footer-link:link {
+    font-size: 1.2rem;
+  }
+}
+/***********Below 750PX**************/
+@media (max-width: 46.8em) {
+  .sponsers {
+    grid-template-columns: repeat(5, 10rem);
+    gap: 2.2rem;
+  }
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+  .review {
+    font-size: 1.2rem;
+  }
+  .grid--3--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .download-cta {
+    padding: 1.2rem 2.6rem 0.2rem 0.6rem;
+  }
+  .how-work-box {
+    width: 100%;
+  }
+  .link {
+    padding: 0.8rem 2.2rem;
+  }
+  .given-icons-box {
+    padding: 2.6rem 1.2rem;
+  }
+  .given-icons-box span {
+    size: 1rem;
+    font-weight: 600;
+  }
+  .advantage-text {
+    font-size: 1.6rem;
+  }
+  .advantage-subheading {
+    font-size: 1rem;
+  }
+  .adv-box {
+    font-size: 1.2rem;
+    padding: 2.2rem;
+  }
+  .grid--2--cols {
+    grid-template-columns: 2fr 1fr;
+  }
+  .sub-heading-2,
+  .tertiary-heading,
+  .inside-marketing p {
+    font-size: 1.2rem;
+  }
+  .secondary-heading {
+    font-size: 2.6rem;
+  }
+  .marketing {
+    column-gap: 1.4rem;
+  }
+  .inside-marketing {
+    gap: 0.4rem;
+    margin-top: 1.4rem;
+  }
+  .copyright .ios-footer,
+  .copyright .android-footer {
+    font-size: 1.2rem;
+  }
+}
+
+/*************Mobile*****************/
+@media (max-width: 34.4em) {
+  html {
+    font-size: 50%;
+  }
+  .secondary-heading {
+    font-size: 2.6rem;
+  }
+  .how-work-media {
+    grid-template-columns: 1fr;
+  }
+  .how-work-box {
+    width: 100%;
+    grid-row: 2/3;
+    padding: 3.4rem 0;
+  }
+  .media-2 img {
+    margin-bottom: 6rem;
+  }
+  .hero {
+    align-items: end;
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2--cols,
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+  .section-hero {
+    padding: 2rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .given-icons-box {
+    flex-direction: column;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logo-col {
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .feature-link {
+    margin-bottom: 2.2rem;
+  }
+  .testimonial {
+    grid-template-columns: 1fr;
+    padding: 3.2rem;
+  }
+  .testimonial-img {
+    height: auto;
+  }
+  .review {
+    margin-top: 2.4rem;
+  }
+  .download-box {
+    margin: 8.4rem 0;
+    width: 100%;
+  }
+  .testimonial-name {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .testimonial-text {
+    width: 100%;
+  }
+  .btn-box {
+    display: none;
+  }
+  .testimonial-box {
+    justify-self: center;
+  }
+  .marketing-img img {
+    display: none;
+  }
+  .features-box {
+    display: grid;
+    justify-items: center;
+  }
+  .btn-box-how {
+    display: none;
+  }
+  .feature-text {
+    text-align: center;
+  }
+  .sponsers {
+    gap: 1.6rem;
+    grid-template-columns: repeat(3, 10rem);
+    justify-content: center;
+    align-items: stretch;
+    padding: 1.8rem 2.4rem;
+  }
+  .logo7 {
+    grid-column: 1;
+  }
+  .logo10 {
+    grid-column: 2/3;
+  }
+
+  .grid {
+    justify-items: center;
+  }
+  .adress-col {
+    text-align: center;
+  }
+  .footer-mobile {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .inside-download {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+  }
+  .download-cta {
+    width: 15rem;
+  }
+  .footer-text {
+    grid-column: 1/-1;
+    margin-left: 0;
+    text-align: center;
+  }
+  .copyright .android-footer {
+    font-size: 1.2rem;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
